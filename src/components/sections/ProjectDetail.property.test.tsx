@@ -1,8 +1,9 @@
 import { describe, it, expect, vi } from 'vitest';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
+import { screen } from '@testing-library/dom';
 import * as fc from 'fast-check';
 import { ProjectDetail } from './ProjectDetail';
-import { Project } from '../../types';
+import type { Project } from '../../types';
 
 // **Feature: portfolio-website, Property 4: Project details include all available metadata**
 describe('ProjectDetail - Property Tests', () => {

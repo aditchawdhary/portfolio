@@ -1,8 +1,9 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
+import { screen } from '@testing-library/dom';
 import userEvent from '@testing-library/user-event';
 import { Hero } from './Hero';
-import { Profile } from '../../types';
+import type { Profile } from '../../types';
 
 const mockProfile: Profile = {
   name: "John Doe",

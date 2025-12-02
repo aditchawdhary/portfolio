@@ -7,7 +7,7 @@ interface ContactContentProps {
 }
 
 export const ContactContent: React.FC<ContactContentProps> = ({ profile }) => {
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
   const {

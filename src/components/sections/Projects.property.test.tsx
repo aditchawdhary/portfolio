@@ -1,8 +1,9 @@
 import { describe, it, expect } from 'vitest';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
+import { screen } from '@testing-library/dom';
 import * as fc from 'fast-check';
 import { Projects } from './Projects';
-import { Project } from '../../types';
+import type { Project } from '../../types';
 
 // **Feature: portfolio-website, Property 1: All projects are displayed**
 describe('Projects - Property Tests', () => {

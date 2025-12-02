@@ -1,9 +1,10 @@
 import { describe, it, expect } from 'vitest';
-import { render, screen, waitFor } from '@testing-library/react';
+import { render, waitFor } from '@testing-library/react';
+import { screen } from '@testing-library/dom';
 import userEvent from '@testing-library/user-event';
 import * as fc from 'fast-check';
 import { Contact } from './Contact';
-import { Profile } from '../../types';
+import type { Profile } from '../../types';
 
 const mockProfile: Profile = {
   name: "Test User",

@@ -1,7 +1,8 @@
 import { describe, it, expect } from 'vitest';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
+import { screen } from '@testing-library/dom';
 import { Contact } from './Contact';
-import { Profile } from '../../types';
+import type { Profile } from '../../types';
 
 const mockProfile: Profile = {
   name: "Jane Doe",
@@ -33,7 +34,7 @@ describe('Contact', () => {
     render(<Contact profile={mockProfile} />);
     
     const emailInput = screen.getByLabelText('Email');
-    const submitButton = screen.getByText('Send Message');
+    screen.getByText('Send Message');
     
     // Type invalid email and submit
     await emailInput.focus();

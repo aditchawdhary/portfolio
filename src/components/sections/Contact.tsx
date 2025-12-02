@@ -8,9 +8,9 @@ interface ContactProps {
 }
 
 export const Contact: React.FC<ContactProps> = ({ profile }) => {
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+  const [error] = useState<string | null>(null);
 
   const {
     register,

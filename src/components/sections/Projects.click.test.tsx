@@ -1,9 +1,10 @@
 import { describe, it, expect } from 'vitest';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
+import { screen } from '@testing-library/dom';
 import userEvent from '@testing-library/user-event';
 import * as fc from 'fast-check';
 import { Projects } from './Projects';
-import { Project } from '../../types';
+import type { Project } from '../../types';
 
 // **Feature: portfolio-website, Property 3: Clicking projects shows details**
 describe('Projects - Click Interaction Property Tests', () => {
